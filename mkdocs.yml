@@ -1,0 +1,47 @@
+site_name: BPay Payment
+
+theme:
+  name: material
+  features:
+    - navigation.footer
+    - navigation.expand
+    - navigation.sections
+
+  palette:
+    # Light mode
+    - scheme: default
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    # Dark mode
+    - scheme: slate
+      primary: blue
+      accent: light blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+copyright: Copyright © 2026 Capgemini New Zealand Limited
+
+extra:
+  generator: false
+
+nav:
+  - Overview: index.md
+  - Getting Started: getting-started.md
+  - Setup: setup.md
+  - Usage Scenarios: usage-scenarios.md
+  - Page Help: page-help.md
+  - Release Notes: release-notes.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+plugins:
+  - search
+  - glightbox
